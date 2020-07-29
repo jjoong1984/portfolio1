@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* 헤어구역, 푸터구역 등 기타 공통구여게 대한 스타일*/
+.row { max-width:1170px; 
+    margin:0 auto;   
+}
+#header { 
+    position:relative;
+    z-index:9999;
+}
+#header .topmenu { 
+    border-bottom:1px solid #ccc
+}
+#header .topmenu_box { 
+    position:relative; 
+    padding-right:10px;
+}
+#header .topmenu .login { 
+    font-size: 13px;
+    color: #505050;
+    font-weight: bold; 
+}
+#header .topmenu .login > a { 
+    display:inline-block;
+    padding: 12.5px 10px;
+    position:relative;
+}
+#header .topmenu .login > a:after { 
+    content:'';
+    width:1px;
+    height:12px;
+    background:#DDD;
+    position:absolute;
+    top:40%; right:-3px
+}
+#header .topmenu .lang .depth_1 > li > a { 
+    font-size: 13px;
+    color: #505050;
+    font-weight: bold;
+    padding: 13px 0;
+    display:inline-block;
+}
+
+#header .topmenu .lang  { 
+    position: absolute;
+    top:0%; left:145px;
+}
+#header .topmenu .lang .depth_1 { 
+    position: relative;
+}
+#header .topmenu .lang .depth_2 { 
+    background: #fff;
+    position: absolute;
+    top:100%; left:-12px;
+    width:100px;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow:0px 0px 5px #888;
+    display:none;
+    z-index: 999;
+}
+#header .topmenu .lang .depth_1 > li:hover .depth_2 {
+    display:block ;
+}
+#header .topmenu .lang .depth_2 > li > a { 
+    font-size: 13px;
+    color: #505050;
+    font-weight: bold;
+    padding:5px 0;
+    display:block;
+}
+#header .topmenu .sns { 
+    font-size: 15px;
+    color: #505050;
+    position: absolute;
+    top:50%; right:0;
+    transform:translateY(-50%); 
+}
+#header .topmenu .sns a { 
+    padding:0 10px;
+    position:relative;
+}
+#header .topmenu .sns > a:after { 
+    content:'';
+    width:1px;
+    height:10px;
+    background:#DDD;
+    position:absolute;
+    top:30%; right:1px
+}
+#header .topmenu .sns > a:last-child:after {
+    display:none;
+}
+#header .topmenu_box .login > a:hover,
+#header .topmenu_box .lang .depth_1 > li > a:hover,
+#header .topmenu_box .lang .depth_2 > li > a:hover,
+#header .topmenu_box .sns > a:hover {
+    color:#968783 
+}
+#header .h1Nav { 
+    position:relative;
+}
+#header .h1Nav h1 { 
+    font-size:42px;
+    font-family:'Raleway' 'verdana' 'sans-serif';
+    color: #505050;
+    padding:30px 0 30px 10px;
+}
+#header .h1Nav h1:hover {  
+    color: #000
+}
+#header .nav > .depth1 {
+    position:relative;
+}
+#header .nav > .depth1 > li { 
+    display:inline-block;
+    position:relative;
+}
+#header .nav > .depth1 > li > a { 
+    color: #505050;
+    font-size: 14px;
+    font-weight:bold;
+    padding:48px 15px;
+    display: inline-block;
+}
+#header .nav > .depth1 > li > a:after { 
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    font-size: 14px;
+    padding-left:7px;
+    color: #505050; 
+}
+#header .nav > .depth1 > li > a:hover {
+    color:#968783 
+}
+#header .nav > .depth1 > li > a:hover:after {
+    color:#968783;
+    content:'\f106';
+    font-family:'Font Awesome 5 Free';
+    font-size: 14px;
+    padding-left:7px;
+}
+#header .nav > .depth1:hover .depth2 { 
+    display: block;
+}
+#header .nav > .depth1 > li:hover .depth2 { 
+    background:#fff;
+    border:1px solid #ddd  
+}
+#header .nav > .depth1 > li:hover .depth2 > li > a {
+    color:#505050;}
+#header .nav { 
+    position:absolute;
+    top:50%; right:0;
+    transform: translateY(-50%);
+}
+#header .nav .depth2 {
+    display:none;
+    position:absolute;
+    top:100%; left:0;
+    width:104%;
+    padding-top:10px;
+    height: 140px;
+    text-align: center;
+    z-index:999
+}
+#header .nav .depth2 > li > a { 
+    padding:5px 0;
+    display:block;
+    color: #fff;
+    font-size:14px;
+}
+#header .h1Nav .nav .depth1 .depth2 > li > a:hover { 
+    color:#968783;
+    font-weight:bold;
+}
+#header .nav .deco_box { 
+    width:100%;
+    height:140px;
+    background:rgba(0, 0, 0, 0.2);
+    position:absolute;
+    top:100%; left:0;
+    display:none;
+}
+#header .nav > .depth1:hover + .deco_box { 
+    display: block;
+}
