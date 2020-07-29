@@ -4,7 +4,6 @@
 @import "animate.css";
 
 /* 공통구역을 제외한 메인페이지 스타일*/
-
 .slide {
     width:100%;
     height:650px;
@@ -121,4 +120,58 @@
     background-size:cover;
     height:100px;
     width:180px;
+}
+.slide_outer .prev:hover + .prev_img { display:block; }
+.slide_outer .next:hover + .next_img { display:block; }
+
+.business ul li {
+    float: left; 
+    width:33.3333%;
+    color: #fff;
+    padding: 40px 30px;
+    height:220px;
+    letter-spacing:0.6px
+}
+.business li > h2 { 
+    font-size: 20px;
+}
+.business p {
+    margin: 20px 0 30px;
+    font-size:14px;
+}
+.business a { 
+    border:2px solid #fff;
+    padding:8px 15px;
+    font-size:14px;
+}
+.business li:nth-child(1) { background:#968783; }
+.business li:nth-child(2) { background:#625654; }
+.business li:nth-child(3) { background:#968783; }
+.business li a:hover {
+    background:#625654;
+    border:2px solid transparent;
+}
+.business li:nth-child(2) > a:hover { background:#968783; }
+
+.service { 
+    padding:70px 0;
+    text-align: center;
+    position:relative;
+}
+.service > span { 
+    font-size: 24px;
+    color:#303030;
+    background:#fff;
+    padding:0 19px;
+    border-left:3px solid #eaeaea;
+    border-right:3px solid #eaeaea;
+    font-weight: bold;
+}
+.service > span:before { 
+    content:'';
+    background:#eaeaea ;
+    width:100%; height:1px;
+    position: absolute;
+    top:50%; left:0;
+    z-index:-1;
 }

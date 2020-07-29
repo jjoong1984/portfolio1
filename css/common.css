@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* 헤어구역, 푸터구역 등 기타 공통구여게 대한 스타일*/
+body { height: 1500px}
 .row { max-width:1170px; 
     margin:0 auto;   
 }
@@ -145,10 +146,12 @@
 }
 #header .nav > .depth1 > li:hover .depth2 { 
     background:#fff;
-    border:1px solid #ddd  
+    /* border:1px solid #ddd   */
 }
 #header .nav > .depth1 > li:hover .depth2 > li > a {
-    color:#505050;}
+    color:#505050;
+    font-weight:bold;
+}
 #header .nav { 
     position:absolute;
     top:50%; right:0;
