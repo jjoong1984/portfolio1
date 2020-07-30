@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 헤어구역, 푸터구역 등 기타 공통구여게 대한 스타일*/
-body { height: 2000px}
+body { height: 4000px}
 .row { max-width:1170px; 
     margin:0 auto;   
 }

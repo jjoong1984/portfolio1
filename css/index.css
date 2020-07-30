@@ -223,3 +223,156 @@
 }
 .service .box > div:hover .overlay_text { opacity:0.8;}
 .service .box > div:hover .service_icon { color:#fff;}
+
+.see_gally { 
+    text-align: center;
+    margin-bottom:100px;
+}
+.see_gally .border { position: relative; }
+.see_gally  span { 
+    font-size: 24px;
+    color:#303030;
+    background:#fff;
+    padding:0 19px;
+    font-weight: bold;
+}
+.see_gally span:before { 
+    content:'';
+    background:#eaeaea ;
+    width:100%; height:20px;
+    position: absolute;
+    top:50%; left:0;
+    transform:translateY(-50%);
+    z-index:-1;
+}
+.see_gally .filter { 
+    margin: 50px 0;
+    text-align: center;
+    display: inline-block;
+}
+.see_gally .filter li { 
+    float: left;
+    margin:0 4px;
+    border:1px solid #515151;
+}
+.see_gally .filter li a { 
+    padding: 5px 9px;
+    font-size: 13px;
+    color: #515151;
+    display: inline-block;
+}
+.see_gally .filter li:hover { 
+    border:1px solid #a79191;
+}
+.see_gally .filter li:hover a { 
+    color:#a79191;
+}
+.see_gally .item {
+    float: left; 
+    width:24%;
+    margin:0 0.5%;
+}
+.see_gally .item_box { 
+    height:280.8px;
+    overflow:hidden;
+    position: relative;
+}
+.see_gally .item > .item_box:nth-child(2) { 
+    margin:10px 0;
+}
+.see_gally .item_box:hover .item_doco { 
+    top:0px
+ }
+.see_gally .item_doco { 
+    position: absolute;
+    top:-72px;
+    transition:all 0.5s;
+}
+.see_gally .text { 
+    padding:15px 18px;
+    background:#2a2a2a;
+    text-align: left;
+}
+.see_gally .text h3 { 
+    font-size: 18px;
+    color:#9a9a9a;
+}
+.see_gally .text h3:hover {
+    color:#f1f1f1;
+}
+.see_gally .text p { 
+    font-size: 14px;
+    color:#9a9a9a;
+}
+.see_gally .item_box img {
+    width: 100%;
+    vertical-align: middle;  
+}
+.more_services { 
+    text-align: center;
+}
+.more_services .border { position: relative; }
+.more_services  span { 
+    font-size: 24px;
+    color:#303030;
+    background:#fff;
+    padding:0 19px;
+    font-weight: bold;
+}
+.more_services span:before { 
+    content:'';
+    background:#eaeaea ;
+    width:100%; height:20px;
+    position: absolute;
+    top:50%; left:0;
+    transform:translateY(-50%);
+    z-index:-1;
+}
+.more_services .services_text i { 
+    font-size: 32px;
+    color:#303030
+}
+.more_services .services_text h3 { 
+    font-size: 15px;
+    color:#303030;
+    margin:15px 0;
+    padding-bottom: 10px;
+}
+.more_services .services_text p { 
+    font-size: 14px;
+    color:#505050;
+    line-height:1.6em;
+
+}
+.more_services .services { 
+    margin-top: 70px;
+}
+.more_services .services_box {
+    float: left;
+    width:33.3333%;
+}
+.more_services .services_box:first-child { 
+    text-align:right;
+}
+.more_services .services_box:last-child { 
+    text-align:left;
+}
+.more_services .services_text:nth-last-child(2) { 
+    margin:70px 0;
+}
+.more_services .services_box img { 
+    width:78%; 
+}
+.more_services .services_box:first-child h3 { 
+    position: relative;
+}
+.more_services .services_box:first-child h3:after {
+    content: '';
+    position: absolute;
+    top:100%; right:0%;
+    height:3px;
+    width:50px;
+    background: #968783;
+    text-align: right;
+    
+  }
