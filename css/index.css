@@ -4,6 +4,7 @@
 @import "animate.css";
 
 /* 공통구역을 제외한 메인페이지 스타일*/
+#section { padding-top:159px ;}
 .slide {
     width:100%;
     height:650px;
@@ -156,9 +157,9 @@
 .service { 
     padding:70px 0;
     text-align: center;
-    position:relative;
 }
-.service > span { 
+.service .border { position: relative; }
+.service  span { 
     font-size: 24px;
     color:#303030;
     background:#fff;
@@ -167,7 +168,7 @@
     border-right:3px solid #eaeaea;
     font-weight: bold;
 }
-.service > span:before { 
+.service  span:before { 
     content:'';
     background:#eaeaea ;
     width:100%; height:1px;
@@ -175,3 +176,50 @@
     top:50%; left:0;
     z-index:-1;
 }
+.service .service_box { 
+    margin-top:60px;
+}
+.service .service_icon { color: #968793;}
+.service .service_box i { 
+    font-size: 32px;
+}
+.service .service_box h3 { 
+    font-size: 15px;
+    padding: 20px 0 15px;
+    position: relative;
+}
+.service .service_box h3:after {
+    content: '';
+    position: absolute;
+    top:100%; left:50%;
+    transform:translateX(-50%);
+    height:3px;
+    width:70px;
+    background: #505050;
+  }
+.service .service_box p { 
+    font-size: 14px;
+    padding-top: 20px;
+}
+.service .box > div { 
+    padding: 25px 13px;
+    margin-bottom:30px;
+    border:1px solid #ddd;
+    position: relative;
+}
+.service .service_box > .box { 
+    float: left;
+    width: 31.3333%;
+}
+.service .service_box > .box:nth-child(2) { 
+    margin: 0 3%
+}
+.service .box .overlay_text { 
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:linear-gradient(to right, #968783, #625654 );
+    opacity:0; transition:all 0.5s;
+    z-index: -1;
+}
+.service .box > div:hover .overlay_text { opacity:0.8;}
+.service .box > div:hover .service_icon { color:#fff;}
