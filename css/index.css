@@ -345,7 +345,7 @@
 
 }
 .more_services .services { 
-    margin-top: 70px;
+    margin:70px 0 90px;
 }
 .more_services .services_box {
     float: left;
@@ -374,5 +374,29 @@
     width:50px;
     background: #968783;
     text-align: right;
-    
-  }
+}
+.Background {
+    background:url(../images/bg.png) no-repeat;
+    height:500px;
+    background-size:cover;
+    background-attachment: fixed;  
+    background-position:center;
+    position: relative;
+}
+.Background .Background_text { 
+    color:#fff;
+    text-align: center;
+    padding:213px 0 ;
+}
+.Background .row h2 { 
+    font-size: 24px;
+    padding-bottom: 22px;
+}
+.Background .row p { 
+    font-size: 14px;
+}
+.Background .overlay { 
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.3);
+}

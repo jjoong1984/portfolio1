@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* 헤어구역, 푸터구역 등 기타 공통구여게 대한 스타일*/
-body { height: 4000px}
 .row { max-width:1170px; 
     margin:0 auto;   
 }
@@ -38,6 +37,9 @@ body { height: 4000px}
     position:absolute;
     top:40%; right:-3px
 }
+#header .topmenu .login > a:last-child:after { 
+    display:none;
+}
 #header .topmenu .lang .depth_1 > li > a { 
     font-size: 13px;
     color: #505050;
@@ -48,7 +50,7 @@ body { height: 4000px}
 
 #header .topmenu .lang  { 
     position: absolute;
-    top:0%; left:145px;
+    top:0%; right:135px;
 }
 #header .topmenu .lang .depth_1 { 
     position: relative;
@@ -85,17 +87,17 @@ body { height: 4000px}
     padding:0 10px;
     position:relative;
 }
-#header .topmenu .sns > a:after { 
+#header .topmenu .sns > a:before { 
     content:'';
     width:1px;
     height:10px;
     background:#DDD;
     position:absolute;
-    top:30%; right:1px
+    top:30%; left:-4px
 }
-#header .topmenu .sns > a:last-child:after {
+/* #header .topmenu .sns > a:last-child:after {
     display:none;
-}
+} */
 #header .topmenu_box .login > a:hover,
 #header .topmenu_box .lang .depth_1 > li > a:hover,
 #header .topmenu_box .lang .depth_2 > li > a:hover,
@@ -192,3 +194,55 @@ body { height: 4000px}
 #header .nav > .depth1:hover + .deco_box { 
     display: block;
 }
+
+#footer {
+    background: #625654;
+    padding: 40px 0;
+}
+#footer .footer_menu { 
+    color:#e1e1e1;
+    position:relative;
+}
+.footer_menu .logo h2 { 
+    font-size:30px;
+    padding: 3px 15px;
+    border:1px solid #e1e1e1;
+    display: inline-block;
+}
+.footer_menu .com_info { 
+    font-size: 14px;
+    position:absolute;
+    top:50%; left:15%;
+    transform:translateY(-50%);
+}
+.footer_menu .com_info .info span { 
+    margin-right:10px;
+    position: relative;
+}
+.footer_menu .com_info .info span:before { 
+    content:'';
+    width:1px;
+    height:12px;
+    color: #e1e1e1;
+    position: absolute;
+    top:0%; left:0;
+}
+
+.footer_menu .com_info .copyright { 
+    margin-top:3px;
+}
+.footer_menu .sns { 
+    font-size: 18px;
+    position: absolute;
+    top:50%; right:0;
+    transform:translateY(-50%)
+}
+.footer_menu .sns a { 
+    margin:0 8px;
+}
+.footer_menu .sns a:hover { 
+    color:#968783;
+}
+
+
+
