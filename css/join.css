@@ -5,3 +5,125 @@
 #join_page { 
     padding-top: 159px;
 }
+.background { 
+    background-image: url(../images/member-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    width:100%;
+    height:300px;
+    background-position:0 -50px;
+    overflow: hidden;
+}
+.join_box { 
+    margin:60px auto;
+    padding:40px 40px;
+    width:40%;
+    border:1px solid #ddd; 
+}
+.join_box .join_content { 
+    width:48%;
+    margin: 0 auto;
+    text-align: center;
+}
+.join_box h1 { 
+    font-size:35px;
+    color:#505050;
+}
+.join_box h2 { 
+    font-size:22px;
+    color:#202124;
+    margin:5px 0 20px 0;
+}
+.mtop15 { 
+    margin-top:15px;
+}
+.join_form input { 
+    padding:13px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    width:100%;
+    font-size: 15px;
+    outline-color: #625654; ;
+    background:rgba(255, 255, 255, 0.1);
+}
+.join_form select { 
+    padding:13px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    width:100%;
+    font-size: 15px;
+    outline-color: #625654; ;
+    background:rgba(255, 255, 255, 0.1);
+}
+.join_form .id_box,
+.join_form .pw_box,
+.join_form .pwre_box,
+.join_form .name_box,
+.join_form .phone_box,
+.join_form .gender_box { 
+    position: relative;
+}
+.join_form .placeholder { 
+    font-size: 15px;
+    color:#888;
+    position: absolute;
+    top:50%; left:5%;
+    transform:translateY(-50%);
+    transition:all 0.5s;
+    z-index: -1;
+}
+.join_form input:focus + .placeholder {
+    font-size:11px;
+    color: #625654;
+    background:#fff;
+    top:0; left:5%;
+    z-index: 0;
+}
+.join_form .gender_box { 
+    position: relative;
+}
+.join_form .placeholder { 
+    font-size: 15px;
+    color:#888;
+    position: absolute;
+    top:50%; left:5%;
+    transform:translateY(-50%);
+    transition:all 0.5s;
+    z-index: -1;
+}
+.join_form select:focus + .placeholder {
+    font-size:11px;
+    color: #625654;
+    background:#fff;
+    top:0; left:5%;
+    z-index: 0;
+}
+.join_form p { 
+    font-size: 14px;
+    color: rgb(170, 0, 0, 0.6);
+    text-align: left;
+    margin-top: 5px;
+}
+.join_form span { 
+    font-size: 15px;
+    color:#5f6368;
+    text-align: left;
+    display: inline-block;
+}
+.join_form .guest { 
+    margin-top:25px ;
+    margin-bottom:35px;
+}
+.join_form span > a { 
+    color: #625654;
+    font-weight: bold;
+}
+
+.join_form .btn button { 
+    font-size: 15px;
+    color: #fff;
+    padding: 7px 30px;
+    background:#625654 ;
+    border-radius:5px;
+    margin:0 7px;
+}
