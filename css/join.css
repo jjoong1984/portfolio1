@@ -37,11 +37,23 @@
 .mtop15 { 
     margin-top:15px;
 }
+.mtop29 { 
+    margin-top:29px;
+}
 .join_form input { 
     padding:13px 15px;
     border:1px solid #ddd;
     border-radius:5px;
     width:100%;
+    font-size: 15px;
+    outline-color: #625654; ;
+    background:rgba(255, 255, 255, 0.1);
+}
+.join_form .email { 
+    padding:13px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    width:46%;
     font-size: 15px;
     outline-color: #625654; ;
     background:rgba(255, 255, 255, 0.1);
@@ -60,7 +72,8 @@
 .join_form .pwre_box,
 .join_form .name_box,
 .join_form .phone_box,
-.join_form .gender_box { 
+.join_form .gender_box,
+.join_form .email_box { 
     position: relative;
 }
 .join_form .placeholder { 
@@ -126,4 +139,7 @@
     background:#625654 ;
     border-radius:5px;
     margin:0 7px;
+}
+.join_form .btn button:hover { 
+    background:#968783 ;
 }
