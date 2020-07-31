@@ -215,19 +215,19 @@
     top:50%; left:15%;
     transform:translateY(-50%);
 }
-.footer_menu .com_info .info span { 
+.footer_menu .info > span { 
     margin-right:10px;
-    position: relative;
 }
-.footer_menu .com_info .info span:before { 
-    content:'';
-    width:1px;
-    height:12px;
+.footer_menu .info > span:before { 
+    content:'|';
+    font-size: 12px;
     color: #e1e1e1;
-    position: absolute;
-    top:0%; left:0;
+    position: relative;
+    top:-2px; left:-7px
 }
-
+.footer_menu .info > span:first-child:before { 
+    display:none;
+}
 .footer_menu .com_info .copyright { 
     margin-top:3px;
 }
